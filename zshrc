@@ -1,20 +1,10 @@
-platform='unknown'
-unamestr=`uname`
-if [[ "$unamestr" == 'Linux' ]]
-then
-   platform='linux'
-else
-   platform='MAC' fi
-
 # Path to your oh-my-zsh installation.
-if [[ $platform == 'linux' ]]; then
-  source "/home/benjaminshafii/.custom/toolbox.zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
-  export ZSH="/home/benjaminshafii/.oh-my-zsh"
-  export GIT_CONFIG="/home/benjaminshafii/.gitconfig"
-else
-  export ZSH="/Users/benjaminshafii/.oh-my-zsh"
-fi
+export GIT_CONFIG="$HOME/.gitconfig"
+
+# Custom scripts
+source "$HOME/.custom/toolbox.zsh"
 
 
 
