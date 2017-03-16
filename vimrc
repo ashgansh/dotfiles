@@ -1,5 +1,9 @@
 "Enable mouse
 set mouse=a
+"
+" Use X windows clipboard
+set clipboard=unnamedplus
+
 
 " Vundle
 set nocompatible              " required
@@ -14,6 +18,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Add all your plugins here
+Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
