@@ -3,6 +3,10 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export GIT_CONFIG="$HOME/.gitconfig"
 
+# Set vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Custom scripts
 source "$HOME/.custom/toolbox.zsh"
 
