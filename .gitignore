@@ -1,2 +1,6 @@
-/config/chromium
-/config/pulse
+config/*
+
+!config/i3
+!config/terminator
+!config/polybar
+!config/compton
