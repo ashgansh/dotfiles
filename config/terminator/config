@@ -3,7 +3,9 @@
   extra_styling = False
   focus = system
   homogeneous_tabbar = False
+  inactive_color_offset = 1.0
   scroll_tabbar = True
+  sticky = True
   tab_position = hidden
   title_font = Ubuntu Mono 9
   title_hide_sizetext = True
