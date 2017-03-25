@@ -132,7 +132,7 @@ bar {
 
 ### Borders
 ## Small Boders
-new_window pixel 2 
+new_window pixel 0
 ## No Borders next to screen Edges
 hide_edge_borders none
 
@@ -142,6 +142,3 @@ exec_always --no-startup-id compton --config ~/.config/compton
 ## Autostart
 #exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec --no-startup-id xautolock -time 5 -locker "i3lock"
-
-# class                 border  backgr. text    indicator 
-client.focused          #83a598 #83a598 #2e4c58 #83a598
