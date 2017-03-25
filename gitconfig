@@ -1,0 +1,26 @@
+[user]
+  email = benjamin.shafii@gmail.com
+	name = Benjamin Shafii
+[push]
+	default = simple
+[pull]
+	rebase = true
+[core]
+  editor = vim
+	excludesfile = /home/benjaminshafii/.gitignore_global
+	bare = true
+
+[alias]
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lg = !"git lg2"
+
+  ll = log --graph --pretty=format':%C(yellow)%h%C(cyan)%d%C(reset) %s %C(white) %C(red bold)%an%C(reset), %C(green)%ar%C(reset)'
+
+  l = !git --no-pager ll -8
+
+  cf = checkout -f
+
+  co = checkout
+
+
