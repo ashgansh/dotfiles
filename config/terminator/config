@@ -12,6 +12,8 @@
   title_use_system_font = False
   window_state = maximise
 [keybindings]
+  line_down = <Shift><Alt>j
+  line_up = <Shift><Alt>k
 [layouts]
   [[default]]
     [[[child1]]]
