@@ -43,6 +43,13 @@ let &runtimepath.=',~/.vim/bundle/ale'
 silent! helptags ALL
 filetype plugin indent on    " required
 
+" Global coloscheme
+"set termguicolors
+
+let g:gruvbox_italic=1
+colorscheme gruvbox
+set background=dark
+"
 " Set lightline theme
 let g:lightline = {
       \ 'colorscheme': 'seoul256',
