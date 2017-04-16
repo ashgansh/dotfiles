@@ -124,7 +124,7 @@ bar {
     modifier none
 
     font pango: Fira Mono Medium 28
-    status_command polybar example
+    status_command polybar top
     colors {
       background #282828
     }
@@ -140,5 +140,4 @@ exec_always --no-startup-id feh --bg-scale /home/benjaminshafii/Downloads/jpg/bi
 exec_always --no-startup-id compton --config ~/.config/compton
 
 ## Autostart
-#exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
-exec --no-startup-id xautolock -time 5 -locker "i3lock"
+# exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
