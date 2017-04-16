@@ -110,4 +110,6 @@ bindkey '^r' history-incremental-search-backward
 # Prevent ctrl-s to freeze tty
 stty -ixon
 
+alias putdir='pwd | xclip'
+alias getdir='cd `xclip -o`'
 export PANEL_FIFO="/tmp/panel-fifo"
