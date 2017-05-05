@@ -138,6 +138,7 @@ hide_edge_borders none
 
 exec_always --no-startup-id feh --bg-scale /home/benjaminshafii/Downloads/jpg/binary.png
 exec_always --no-startup-id compton --config ~/.config/compton
+exec_always --no-startup-id sh ~/.config/polybar/init.sh
 
 ## Autostart
 # exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
