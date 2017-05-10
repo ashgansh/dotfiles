@@ -15,10 +15,6 @@ primary = #fabd2f
 secondary = #e60053
 alert = #bd2c40
 
-[global/wm]
-margin-bottom = 2
-override-redirect = true
-
 [bar/top]
 monitor = ${env:MONITOR}
 
@@ -179,3 +175,7 @@ menu-3-0 = logout
 menu-3-0-exec = i3-msg exit
 menu-3-1 = cancel
 menu-3-1-exec = menu-open-0 vim:ft=dosini
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
