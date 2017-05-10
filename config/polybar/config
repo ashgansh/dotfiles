@@ -23,27 +23,27 @@ override-redirect = true
 monitor = ${env:MONITOR}
 
 width = 100% 
-height = ${env:POLYBAR_HEIGHT:65}
+height = ${env:POLYBAR_HEIGHT}
 ;offset-x = 0
 ;offset-y = 0
 
 locale = de_DE.UTF-8
 background = ${colors.background}
 foreground = ${colors.foreground}
-dpi = ${env:DPI:230}
+dpi = ${env:DPI}
 
 font-0 = Courrier New:weight = Regular:size=11;0
 font-1 = FontAwesome:weight = bold :size=9;1
 
 modules-left =  date
 modules-center = i3
-modules-right = filesystem volume battery powermenu
+modules-right = volume battery powermenu
 
 tray-position = left
 tray-padding = 15
 tray-transparent = false
 tray-detached = false
-tray-maxsize = 12
+tray-maxsize = ${env:POLYBAR_TRAY_SIZE}
 tray-background = ${colors.background}
 
 underline-size = 3
@@ -56,11 +56,10 @@ module-margin-right = 3
 
 [module/filesystem]
 type = internal/fs
-interval = 25
 
+; Mountpoints to display
 mount-0 = /
 
-label-mounted = %mountpoint%: %used%/%total%
 
 [module/battery]
 type = internal/battery
