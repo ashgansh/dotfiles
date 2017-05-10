@@ -37,7 +37,7 @@ font-1 = FontAwesome:weight = bold :size=9;1
 
 modules-left =  date
 modules-center = i3
-modules-right = volume battery powermenu
+modules-right = volume keyboard battery powermenu
 
 tray-position = left
 tray-padding = 15
@@ -53,6 +53,22 @@ padding-left = 1
 padding-right = 1
 module-margin-left = 3
 module-margin-right = 3
+
+[module/keyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+format-prefix-underline = ${colors.secondary}
+
+label-layout = %layout%
+label-layout-underline = ${colors.secondary}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
