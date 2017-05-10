@@ -31,7 +31,7 @@ font-1 = FontAwesome:weight = bold :size=9;1
 
 modules-left =  date
 modules-center = i3
-modules-right = volume keyboard battery powermenu
+modules-right = volume xbacklight keyboard battery powermenu
 
 tray-position = left
 tray-padding = 15
@@ -138,7 +138,24 @@ date-alt = "  %A, %d %B"
 ;format = %date% 
 ;format-padding = 1
 ;format-background = #7aa04b
-;format-foreground = #94a086
+;
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = " "
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #ff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = ${colors.secondary}
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.secondary}
 
 [module/powermenu]
 type = custom/menu
