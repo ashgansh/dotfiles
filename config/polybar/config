@@ -126,8 +126,13 @@ format-background = ${colors.background}
 [module/i3]
 type = internal/i3
 pin-workspaces = true
+wrapping-scroll = false
 enable-click = true
 format = <label-state>
+
+label-focused =  %index%
+label-focused-underline = ${colors.secondary}
+label-focused-padding = 1
 
 
 [module/date]
