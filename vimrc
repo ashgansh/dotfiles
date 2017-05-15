@@ -108,6 +108,10 @@ set nu
 " 256 colors
 set t_Co=256
 
+" Disable safe write
+" Can prevent some watchers to NOT trigger when you change the files
+set backupcopy=yes
+"
 " Change .swp location
 set backupdir=~/.vim/backup_files//
 set directory=~/.vim/swap_files//
