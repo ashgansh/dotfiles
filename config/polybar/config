@@ -21,7 +21,7 @@ monitor = ${env:MONITOR}
 width = 100% 
 height = ${env:POLYBAR_HEIGHT}
 
-locale = de_DE.UTF-8
+locale = en_US.UTF-8
 background = ${colors.background}
 foreground = ${colors.foreground}
 dpi = ${env:DPI}
@@ -31,7 +31,7 @@ font-1 = FontAwesome:weight = bold :size=9;1
 
 modules-left =  date
 modules-center = i3
-modules-right = volume xbacklight keyboard battery powermenu
+modules-right = volume xbacklight filesystem keyboard battery powermenu
 
 tray-position = left
 tray-padding = 15
@@ -66,11 +66,11 @@ label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
+interval = 25
 
-; Mountpoints to display
 mount-0 = /
 
-
+label-mounted =   : %percentage_used%%
 [module/battery]
 type = internal/battery
 battery = BAT0
@@ -92,7 +92,6 @@ ramp-capacity-foreground = #999
 animation-charging-0 =   
 animation-charging-1 =   
 animation-charging-2 =   
-;animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
 [module/volume]
@@ -107,7 +106,7 @@ ramp-volume-2 = 
 format-volume-background = ${colors.background}
 format-volume-foreground = ${colors.foreground}
 
-label-muted = 🔇muted
+label-muted = muted
 
 
 [module/xwindow]
@@ -135,10 +134,6 @@ interval = 1
 date = "  %H:%M"
 date-alt = "  %A, %d %B"
 
-;format = %date% 
-;format-padding = 1
-;format-background = #7aa04b
-;
 
 [module/xbacklight]
 type = internal/xbacklight
