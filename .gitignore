@@ -4,4 +4,5 @@ config/*
 !config/terminator
 !config/polybar
 !config/compton
-!config/Xressources
+!config/Xresources
+!config/dunst
