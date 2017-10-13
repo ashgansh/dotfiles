@@ -7,12 +7,12 @@
 ;
 ;=====================================================
 [colors]
-background = #222
+background = #3C4C55
 ;background-alt = #444
-foreground = #ebdbb2
+foreground = #C5D4DD
 ;foreground-alt = #555
-primary = #fabd2f
-secondary = #e60053
+primary = #C5D4DD
+secondary = #C5D4DD
 alert = #bd2c40
 
 [bar/top]
@@ -61,7 +61,7 @@ label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
+label-indicator-background = #FFF
 label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
@@ -87,7 +87,7 @@ format-full-prefix = " "
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = #999
+ramp-capacity-foreground = #C5D4DD
 
 animation-charging-0 =   
 animation-charging-1 =   
@@ -143,7 +143,7 @@ label = " "
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #ff
+bar-indicator-foreground = #C5D4DD
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
