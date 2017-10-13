@@ -18,7 +18,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Add all your plugins here
-Plugin 'morhetz/gruvbox'
+Plugin 'trevordmiller/nova-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -28,13 +28,17 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'mxw/vim-jsx'
 Plugin 'mileszs/ack.vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'jamessan/vim-gnupg'
+Plugin 'posva/vim-vue'
 Plugin 'vimwiki/vimwiki'
+Plugin 'heavenshell/vim-prettier'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'fleischie/vim-styled-components'
+Plugin 'hail2u/vim-css3-syntax'
 
 call vundle#end()            " required
 " ale
@@ -43,18 +47,9 @@ let &runtimepath.=',~/.vim/bundle/ale'
 silent! helptags ALL
 filetype plugin indent on    " required
 
-" Global coloscheme
-"set termguicolors
 
-let g:gruvbox_italic=1
-colorscheme gruvbox
-set background=dark
+colorscheme nova
 "
-" Set lightline theme
-let g:lightline = {
-      \ 'colorscheme': 'seoul256',
-      \}
-
 " Python pep8
 au Filetype python:
     \ set tabstop=4 | 
