@@ -141,4 +141,4 @@ exec_always --no-startup-id compton --config ~/.config/compton
 exec_always --no-startup-id sh ~/.config/polybar/init.sh
 
 ## Autostart
-# exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
+exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
