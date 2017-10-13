@@ -24,5 +24,3 @@
   co = checkout
 
   ds = diff --staged
-
-
