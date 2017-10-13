@@ -5,6 +5,7 @@ set mouse=a
 set clipboard=unnamedplus
 
 
+
 " Vundle
 set nocompatible              " required
 filetype off                  " required
@@ -202,6 +203,10 @@ let g:ctrlp_user_command = [
   \]
 
 autocmd InsertEnter,InsertLeave * set cul!
+
+" Prettier
+autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
+
 
 " Easy sudo save
 cmap w!! w !sudo tee > /dev/null %
