@@ -132,9 +132,13 @@ bar {
 
 ### Borders
 ## Small Boders
-new_window pixel 0
+new_window pixel 3
 ## No Borders next to screen Edges
 hide_edge_borders none
+
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #ffff00 #ffffff #2e9ef4   #285577
 
 exec_always --no-startup-id feh --bg-scale /home/benjaminshafii/Downloads/jpg/binary.png
 exec_always --no-startup-id compton --config ~/.config/compton

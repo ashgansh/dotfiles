@@ -11,12 +11,8 @@ shadow-exclude = [ "n:e:Notification" ];        # Exclude conditions for shadows
 shadow-ignore-shaped = true;
 
 # Opacity
-inactive-opacity = 0.9;                 # Opacity of inactive windows. (0.1 - 1.0)
 
 # Fading
-fading = true;                 # Fade windows during opacity changes.
-fade-in-step = 0.1;             # Opacity change between steps while fading in. (default 0.028).
-fade-out-step = 0.1;            # Opacity change between steps while fading out. (default 0.03).
 
 mark-wmwin-focused = true;      # Try to detect WM windows and mark them as active.
 mark-ovredir-focused = true;
