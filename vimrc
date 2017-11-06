@@ -26,7 +26,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'w0rp/ale'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'mxw/vim-jsx'
+Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'jparise/vim-graphql'
 Plugin 'mileszs/ack.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
@@ -39,6 +40,8 @@ Plugin 'heavenshell/vim-prettier'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fleischie/vim-styled-components'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'hail2u/vim-css3-syntax'
 
 call vundle#end()            " required
@@ -161,11 +164,7 @@ set fillchars+=vert:\
 " Hide Vertical Bar
 hi VertSplit ctermfg=black 
 
-" Hide Tilde
-hi NonText ctermfg=black
-
 "Highlight current line
-hi CursorLine ctermbg=237 cterm=none ctermfg=none
 set cursorline
 
 " Nerdtree
@@ -207,6 +206,10 @@ autocmd InsertEnter,InsertLeave * set cul!
 " Prettier
 autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
 
+nmap <F4> :NERDTreeFind<CR>
 
 " Easy sudo save
 cmap w!! w !sudo tee > /dev/null %
+
+
+
