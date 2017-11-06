@@ -6,3 +6,4 @@ config/*
 !config/compton
 !config/Xresources
 !config/dunst
+!config/rofi
