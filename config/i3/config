@@ -14,7 +14,7 @@ gaps outer 12
 floating_modifier $mod
 
 # Start a terminal
-bindsym $mod+Return exec dbus-launch terminator 
+bindsym $mod+Return exec dbus-launch termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -132,7 +132,7 @@ bar {
 
 ### Borders
 ## Small Boders
-new_window pixel 3
+new_window pixel 1
 ## No Borders next to screen Edges
 hide_edge_borders none
 
