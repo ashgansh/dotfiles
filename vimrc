@@ -203,13 +203,18 @@ let g:ctrlp_user_command = [
 
 autocmd InsertEnter,InsertLeave * set cul!
 
-" Prettier
-autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
-
 nmap <F4> :NERDTreeFind<CR>
 
 " Easy sudo save
 cmap w!! w !sudo tee > /dev/null %
 
+" INLINE LINTING/TYPE CHECKING/FORMATTING
+let g:ale_linters = {
+\  'javascript': ['eslint', 'flow', 'prettier'],
+\}
+let g:ale_fixers = {
+\  'javascript': ['eslint', 'prettier'],
+\}
 
-
+" The code can be formatted using ALEFix
+ let g:ale_javascript_prettier_use_local_config = 1
