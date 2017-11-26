@@ -153,8 +153,20 @@ inoremap <right> <nop>
 " Using backspace to delete in insert mode on mac
 set backspace=indent,eol,start
 
-" Launch NERDTree at startup
+" NERDTree
+
+" Nerdtree
+let NERDTreeMinimalUI=1
+let NERDTreeHighlightCursorline=0
+let NERDTreeIgnore=['node_modules', '\.pyc$']
+let NERDTreeWinSize=20
+
+" Toggle NERDTree
 map <F3> :NERDTreeToggle<CR>
+
+" Show current file
+nmap <F4> :NERDTreeFind<CR>
+
 " Exit NERDTree if it's the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -164,14 +176,9 @@ set fillchars+=vert:\
 " Hide Vertical Bar
 hi VertSplit ctermfg=black 
 
-"Highlight current line
+" Highlight current line
 set cursorline
 
-" Nerdtree
-let NERDTreeMinimalUI=1
-let NERDTreeHighlightCursorline=0
-let NERDTreeIgnore=['node_modules', '\.pyc$']
-let NERDTreeWinSize=20
 
 " Default Indent
 set tabstop=2
@@ -196,14 +203,13 @@ noremap <silent> _ :exe "resize " . (winheight(0) * 3/2)<CR>
 noremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
 
 
-" Hide gitignore
+" Hide gitignore from ctrlp
 let g:ctrlp_user_command = [
   \ '.git/', 'cd %s && git ls-files -oc . --exclude-standard', 'find %s -type f'
   \]
 
 autocmd InsertEnter,InsertLeave * set cul!
 
-nmap <F4> :NERDTreeFind<CR>
 
 " Easy sudo save
 cmap w!! w !sudo tee > /dev/null %
@@ -217,4 +223,7 @@ let g:ale_fixers = {
 \}
 
 " The code can be formatted using ALEFix
- let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_javascript_prettier_use_local_config = 1
+
+" Shortcust to use ALEFix
+nmap <F9> :ALEFix<CR>
