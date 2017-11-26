@@ -1,3 +1,6 @@
+# Install some basic stuff
+
+sudo pacman -Sy --noconfirm python3 ansible
 # Setup VIM
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/backup_files
