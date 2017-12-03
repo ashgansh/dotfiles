@@ -8,7 +8,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Custom scripts
-source "$HOME/.custom/toolbox.zsh"
+source "$HOME/.config/toolbox.zsh"
 
 
 
@@ -37,6 +37,7 @@ export PATH="/sbin/:/bin/:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
+export LC_MESSAGE="C"
 
 # Command history
 setopt share_history
@@ -101,11 +102,12 @@ bindkey '^h' backward-delete-char
 # ctrl-w removed word backwards
 bindkey '^w' backward-kill-word
 
+
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
 
 # startx at start
-[[ -z $DISPLAY && $XDG_VTNR -eq 1  ]] && exec startx
+[[ -z $DISPLAY && $XDG_VTNR -eq 1  ]] && startx
 
 # Prevent ctrl-s to freeze tty
 stty -ixon
