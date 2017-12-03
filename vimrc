@@ -225,5 +225,7 @@ let g:ale_fixers = {
 " The code can be formatted using ALEFix
 let g:ale_javascript_prettier_use_local_config = 1
 
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
+
 " Shortcust to use ALEFix
 nmap <F9> :ALEFix<CR>
