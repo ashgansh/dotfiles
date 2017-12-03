@@ -1,1 +1,6 @@
-/home/benjaminshafii/Dotfiles/Xresources
+Xft.dpi: 100
+Xft.autohint: 0
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
