@@ -42,6 +42,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'trevordmiller/nova-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vimwiki/vimwiki'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 Plugin 'w0rp/ale'
 
 call vundle#end()            " required
