@@ -30,7 +30,7 @@ gpg --export-ownertrust > pgp-ownertrust.asc
 ```sh
 gpg --import pgp-public-keys.asc
 gpg --import pgp-private-keys.asc
-gpg --import-ownertrust pgp-ownertrust.asc```
+gpg --import-ownertrust pgp-ownertrust.asc
 ```
 
 # Debuging
