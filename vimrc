@@ -44,6 +44,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vimwiki/vimwiki'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'burnettk/vim-angular'
 Plugin 'w0rp/ale'
 
 call vundle#end()            " required
@@ -218,16 +219,21 @@ cmap w!! w !sudo tee > /dev/null %
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
-\  'javascript': ['eslint', 'flow', 'prettier'],
+\  'javascript': ['flow', 'eslint', 'prettier'],
+\  'graphql': ['gqlint'],
 \}
 let g:ale_fixers = {
 \  'javascript': ['eslint', 'prettier'],
+\  'graphql': ['prettier'],
+\  'typescript': ['tslint', 'prettier'],
 \}
 
 " The code can be formatted using ALEFix
 let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_completion_enabled = 0
 
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
 
 " Shortcust to use ALEFix
 nmap <F9> :ALEFix<CR>
+nmap <F8> :ALEGoToDefinitionInTab<CR>
