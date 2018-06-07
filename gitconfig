@@ -21,6 +21,8 @@
 
   cf = checkout -f
 
+  ca = commit --amend
+
   co = checkout
 
   ds = diff --staged

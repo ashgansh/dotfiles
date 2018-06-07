@@ -29,6 +29,7 @@ plugins=(
   ssh-agent
   vi-mode
   history
+  yarn
 )
 
 # User configuration
@@ -115,3 +116,4 @@ stty -ixon
 alias putdir='pwd | xclip'
 alias getdir='cd `xclip -o`'
 export PANEL_FIFO="/tmp/panel-fifo"
+source /usr/share/nvm/init-nvm.sh
